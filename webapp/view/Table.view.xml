@@ -1,0 +1,126 @@
+<mvc:View controllerName="zriepwmobiletable.controller.Table" xmlns:mvc="sap.ui.core.mvc" xmlns:core='sap.ui.core' xmlns="sap.m" >
+    <Table id="idNotificationsTable" inset="false" mode="MultiSelect" selectionChange='onSelect' 
+        items="{ path: 'DATA>/NotificationCollection', sorter: { path: 'Name' } }"> 
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="Ultime letture" level="H2"/>
+					<ToolbarSpacer/>
+					<!--<SearchField id="searchField" search="onSearch" placeholder="Search by D" width="auto"></SearchField>
+					<ToggleButton id="scanBarcode" tooltip="Scan Equipment Barcode" icon="sap-icon://bar-code" press="onBarcodeScan"/>
+					
+					<Button tooltip="Filter" icon="sap-icon://filter" press="onFilter"/>-->
+					<Button tooltip="Group" icon="sap-icon://sort" press='onSort'/>
+			 <!--<Button icon="sap-icon://action-settings" press='onPersoButtonPressed'/>-->		
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column demandPopin="true" hAlign="Center">
+				<Text text="Data lettura"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="N. logico num."/>
+			</Column>
+			<Column hAlign="Center">
+				<Text text="Pos. contatore calc."/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="UM"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="CL"/>
+			</Column>
+			<Column demandPopin="true" hAlign="Center">
+				<Text text="Impianto"/>
+			</Column>
+
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Equipment"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Num."/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Ora lettura"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Descr. breve"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Apparecchiatura"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Pos. contatore letta"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="ID interno DL"/>
+			</Column>
+			<Column demandPopin="true" hAlign="Center">
+				<Text text="Quantità calcolo"/>
+			</Column>
+
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Consumo"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="UM"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Info DQ"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Data Calc. Pian."/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="PC"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="[JBP]D.Lett"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="[J]T.Lett"/>
+			</Column>
+
+		</columns>
+	
+	<ColumnListItem>	
+		<cells>
+				<!--	title="{DATA>S_FKKOP-XBLNR}"-->
+				<!--<ObjectStatus text="{DATA>S_FKKOP-AMPEL}" state="{path : 'DATA>S_FKKOP-AMPEL', formatter : 'zriepwmobiletable.Formatter.priority'}"/>-->
+	<!--				<ObjectIdentifier title="{DATA>P_IOUTTAB-ADAT}" />-->
+	<!--				<Text text="{ path: 'DATA>P_IOUTTAB-ZWSTAND_BI_DISP', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } } }"/>-->
+        				<!--ext text="{ path: 'DATA>S_FKKOP-BLDAT', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'MM/dd/yyyy' } } }"/>-->
+	<!--				<Text text="{ path: 'DATA>P_IOUTTAB-MASSREAD', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } } }"/>-->
+	<!--				<ObjectStatus icon= "{path:'DATA>P_IOUTTAB-AMPEL', formatter:'zriepwmobiletable.Formatter.icon'}" state="{path : 'DATA>S_FKKOP-AMPEL', formatter : 'zriepwmobiletable.Formatter.priority'}"/>-->
+	<!--				<Text text="{DATA>P_IOUTTAB-BETRW}"/>-->
+	<!--				<Input value="{DATA>P_IOUTTAB-AUGBW}" editable="true"/>	  -->
+
+    					<Text text="{ path: 'DATA>ADAT', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } }}" />
+	    				<Text text="{ path: 'DATA>LOGIKZW' }"/>
+	    				<Text text="{ path: 'DATA>ZWSTAND_BI_DISP' }"/>
+	    				<Text text="{ path: 'DATA>MASSREAD' }"/>
+	    				<Text text="{ path: 'DATA>ABLESGR' }"/>
+	    				<Text text="{ path: 'DATA>ANLAGE' }"/>
+
+	    				<Text text="{ path: 'DATA>EQUNR' }"/>
+	    				<Text text="{ path: 'DATA>ZWNUMMER' }"/>
+	    				<Text text="{ path: 'DATA>ATIM' }"/>
+	    				<Text text="{ path: 'DATA>TEXT_ABLESGR' }"/>
+	    				<Text text="{ path: 'DATA>GERNR' }"/>
+	    				<Text text="{ path: 'DATA>ZWSTAND_DISP' }"/>
+	    				<Text text="{ path: 'DATA>ABLBELNR' }"/>
+	    				<Text text="{ path: 'DATA>I_ABRMENGE' }" />      
+
+	    				<Text text="{ path: 'DATA>CONSMPT' }"/>
+	    				<Text text="{ path: 'DATA>MASSBILL' }"/>
+	    				<Text text="{ path: 'DATA>QNT_STATUS' }"/>
+	    				<Text text="{ path: 'DATA>ABRDATS', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } } }"/>
+	    				<Text text="{ path: 'DATA>BP' }"/>
+	    				<Text text="{ path: 'DATA>ADATREAL' }"/>
+	    				<Text text="{ path: 'DATA>ATIMREAL' }"/>
+
+		</cells>
+		</ColumnListItem>
+	</Table> 
+</mvc:View>

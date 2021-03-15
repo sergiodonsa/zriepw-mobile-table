@@ -1,0 +1,49 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm='onFilterConfirmed'>
+		<filterItems>
+			<ViewSettingsFilterItem text="Data lettura" items="{ path: 'DATAX>/NotificationCollection'}" key="P_IOUTTAB-ADAT" multiSelect="true" >
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-ADAT}" key="P_IOUTTAB-ADAT"/>
+				<!--<ViewSettingsItem text="S2 - Service request" key="QMART___EQ___S2"/>
+					<ViewSettingsItem text="S3 - Activity report" key="QMART___EQ___S3"/>-->	
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Pos. contatore calc." key="P_IOUTTAB-ZWSTAND_BI_DISP" multiSelect="true"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-ZWSTAND_BI_DISP}" key="P_IOUTTAB-ZWSTAND_BI_DISP"/>
+				<!--	<ViewSettingsItem text="2-High" key="S_FKKOP-AMPEL___EQ___2"/>
+					<ViewSettingsItem text="3-Medium" key="S_FKKOP-AMPEL___EQ___3"/>
+					<ViewSettingsItem text="4-Low" key="S_FKKOP-AMPEL___EQ___4"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="UM" key="P_IOUTTAB-MASSREAD" multiSelect="false"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-MASSREAD}" key="P_IOUTTAB-MASSREAD" />
+				<!--	<ViewSettingsItem text="Within a month" key="S_FKKOP-BUDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BUDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="CL" key="P_IOUTTAB-ABLESGR" multiSelect="false" items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-ABLESGR}" key="P_IOUTTAB-ABLESGR"/>
+					<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Impianto" key="P_IOUTTAB-ANLAGE" multiSelect="false" items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-ANLAGE}" key="P_IOUTTAB-ANLAGE"/>
+				<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Quantità calcolo" key="P_IOUTTAB-I_ABRMENGE" multiSelect="false"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>P_IOUTTAB-I_ABRMENGE}" key="P_IOUTTAB-I_ABRMENGE"/>
+					<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

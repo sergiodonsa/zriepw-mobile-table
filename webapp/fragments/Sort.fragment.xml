@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm='onSortConfirm'>
+		<sortItems>
+			<ViewSettingsItem text="Data lettura_s" key="P_IOUTTAB-ADAT" selected="true" />
+			<ViewSettingsItem text="Pos. contatore calc._s" key="P_IOUTTAB-ZWSTAND_BI_DISP" />
+			<ViewSettingsItem text="UM_s" key="P_IOUTTAB-MASSREAD" />
+			<ViewSettingsItem text="CL_s" key="P_IOUTTAB-ABLESGR" />
+			<ViewSettingsItem text="Impianto_s" key="P_IOUTTAB-ANLAGE" />
+			<ViewSettingsItem text="Quantità calcolo_s" key="P_IOUTTAB-I_ABRMENGE" />
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
