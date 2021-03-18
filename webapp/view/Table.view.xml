@@ -23,7 +23,7 @@
 				<Text text="N. logico num."/>
 			</Column>
 			<Column hAlign="Center">
-				<Text text="Pos. contatore calc."/>
+				<Text text="Pos. contat. calc."/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
 				<Text text="UM"/>
@@ -36,7 +36,7 @@
 			</Column>
 
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-				<Text text="Equipment"/>
+				<Text text="Equipm."/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
 				<Text text="Num."/>
@@ -51,7 +51,7 @@
 				<Text text="Apparecchiatura"/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-				<Text text="Pos. contatore letta"/>
+				<Text text="Pos. contat. letta"/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
 				<Text text="ID interno DL"/>
@@ -61,7 +61,7 @@
 			</Column>
 
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-				<Text text="Consumo"/>
+				<Text text="Cons."/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
 				<Text text="UM"/>
@@ -76,10 +76,10 @@
 				<Text text="PC"/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-				<Text text="[JBP]D.Lett"/>
+				<Text text="[JBP] D.Lett"/>
 			</Column>
 			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
-				<Text text="[J]T.Lett"/>
+				<Text text="[J] T.Lett"/>
 			</Column>
 
 		</columns>
