@@ -66,7 +66,25 @@ sap.ui.define([
 				sNotificationId = oNotificationCell.getTitle();
 			this._oEventBus.publish("zriepwmobiletable", "select", {
 				"id": sNotificationId
-			});
+            });
+//INIZIO CHOOSE            
+            all = oEvent.getParameter("selectAll");
+            //sNotificationId = oNotificationCell.getTitle();
+            var myRow = this.getView().getModel('DATA').getProperty(oSelectedListItem.getBindingContextPath());
+            if ( all )
+                myRow['CHOOSE'] = "#";
+            else if ( myRow['CHOOSE'] === 'X' )
+                myRow['CHOOSE'] = "";
+            else
+            myRow['CHOOSE'] = "X";
+            this.getView().getModel('DATA').setProperty(oSelectedListItem.getBindingContextPath(), myRow );
+            var aId = oNotificationCell.sId.split("idNotificationsTable-");
+            this._oEventBus.publish("zriepwmobiletable", "select", {
+                "id": aId[aId.length - 1],
+                "all": all,
+                "selected": myRow['CHOOSE'],
+            });   
+//FINE CHOOSE         
 		},
 		
 		/*
